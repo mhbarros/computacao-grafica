@@ -8,7 +8,8 @@ const FRAMERATE = 60
 
 const firstSquare = new FirstSquare(CELL_W, CELL_H)
 const secondSquare = new SecondSquare(CELL_W, CELL_H)
-const thirdSquare = new ThirdSquare()
+const thirdSquare = new ThirdSquare(CELL_W, CELL_H, FRAMERATE)
+const fourthSquare = new FourthSquare(CELL_W, CELL_H, FRAMERATE)
 
 function setup() {
   createCanvas(CANVAS_W, CANVAS_H)
@@ -22,14 +23,15 @@ function draw() {
   firstSquare.init()
   secondSquare.init()
   thirdSquare.init()
+  fourthSquare.init()
 }
 
 
 const drawDivisions = () => {
 
   // Second line
-  fill('purple')
-  rect(0,300,CELL_W,CELL_H)
+  // fill('purple')
+  // rect(0,300,CELL_W,CELL_H)
   fill('pink')
   rect(300,300,CELL_W,CELL_H)
   fill('white')
