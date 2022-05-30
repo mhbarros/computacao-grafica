@@ -14,6 +14,8 @@ const fourthSquare = new FourthSquare(CELL_W, CELL_H, FRAMERATE)
 function setup() {
   createCanvas(CANVAS_W, CANVAS_H)
   frameRate(FRAMERATE)
+
+  secondSquare.setup()
 }
 
 
