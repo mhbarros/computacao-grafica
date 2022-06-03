@@ -193,9 +193,35 @@ function SecondSquare(CELL_W, CELL_H){
 
     push()
     translate(CELL_W, 0)
+    this.drawCircle()
+    this.drawTriangle()
     this.drawKoch()
     pop()
 
+  }
+
+  this.drawCircle = () => {
+    push()
+    translate(CELL_W/2, CELL_H/2)
+    circle(0,0,CELL_W)
+    pop()
+  }
+
+  this.drawTriangle = () => {
+    push()
+    translate(CELL_W/2, CELL_H/2)
+
+    const circleRadius = CELL_W/2
+    const side = circleRadius * Math.sqrt(3)
+    const apoth = circleRadius / 2
+    const theta = 60
+
+    strokeWeight(10)
+    point(0, -CELL_H/2)
+
+    
+
+    pop()
   }
 
   this.drawCell = (cellColor = '#abc123') => {

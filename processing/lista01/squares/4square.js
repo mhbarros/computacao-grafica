@@ -17,11 +17,12 @@ function FourthSquare(CELL_W, CELL_H, FRAMERATE) {
   }
 
   this.drawMoon = () => {
+    const angle = radians(frameCount) * 6 / 2
     fill('black')
-    rotate(radians(frameCount) * 6 / 2)
+    rotate(angle)
     circle(-40,-40,10)
 
-    if(radians(frameCount) * 6 / 2 % radians(360) === 0) {
+    if(angle % radians(360) === 0) {
       this.drawCell()
     }
   }
