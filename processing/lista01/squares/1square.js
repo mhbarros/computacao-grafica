@@ -1,3 +1,6 @@
+/**
+ * Draws a shape with vertices changing every 2 seconds
+ */
 function FirstSquare(CELL_W, CELL_H){
 
   this.numberOfVertices = 3

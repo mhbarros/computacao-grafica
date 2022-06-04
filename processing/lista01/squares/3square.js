@@ -1,3 +1,6 @@
+/**
+ * Representation of our solar system. It's beautiful.
+ */
 function ThirdSquare(CELL_w, CELL_H, FRAMERATE){
 
   this.angle = 0

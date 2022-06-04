@@ -1,3 +1,6 @@
+/**
+ * Silence is golden..
+ */
 function SeventhSquare() {
   this.init = () => {
     this.drawCell()

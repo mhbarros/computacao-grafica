@@ -1,3 +1,6 @@
+/**
+ * Creates an art based on input phrases
+ */
 function NinthSquare(CELL_W, CELL_H) {
 
   this.input = null
@@ -53,7 +56,7 @@ function NinthSquare(CELL_W, CELL_H) {
   this.textEventListener = keyboardEvent => {
     if(keyboardEvent.key !== 'Enter') return
 
-    const screenPadding = 50
+    const screenPadding = 15
     const x = this.randomBetween(screenPadding, CELL_W - screenPadding)
     const y = this.randomBetween(screenPadding, CELL_H - screenPadding)
 
@@ -69,7 +72,7 @@ function NinthSquare(CELL_W, CELL_H) {
   this.drawTexts = () => {
     this.texts.map(textValue => {
       fill('white')
-      textSize(20)
+      textSize(14)
       text(textValue.text, textValue.x, textValue.y)
     })
   }

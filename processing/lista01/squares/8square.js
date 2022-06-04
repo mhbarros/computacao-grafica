@@ -1,5 +1,5 @@
 /**
- * A Simple Snake Game
+ * The classic snake game, but on easy mode
  */
 function EighthSquare(CELL_W, CELL_H){
   this.numSegments = 5
@@ -28,6 +28,9 @@ function EighthSquare(CELL_W, CELL_H){
 
     push()
     translate(CELL_W, CELL_H * 2)
+    fill(0)
+    text('Movimente a cobrinha com as teclas WASD', 30, 35)
+
     this.drawScore()
     this.drawSnake()
     this.moveSnake()

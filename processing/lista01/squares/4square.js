@@ -1,3 +1,6 @@
+/**
+ * Our moon trace, taking 6 seconds to complete.
+ */
 function FourthSquare(CELL_W, CELL_H, FRAMERATE) {
 
   this.init = () => {
@@ -22,7 +25,7 @@ function FourthSquare(CELL_W, CELL_H, FRAMERATE) {
     rotate(angle)
     circle(-40,-40,10)
 
-    if(angle % radians(360) === 0) {
+    if(Number((angle % radians(360)).toFixed(1)) === 0) {
       this.drawCell()
     }
   }

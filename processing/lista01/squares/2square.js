@@ -216,10 +216,9 @@ function SecondSquare(CELL_W, CELL_H){
     const apoth = circleRadius / 2
     const theta = 60
 
-    strokeWeight(10)
-    point(0, -CELL_H/2)
+    // ...
 
-    
+
 
     pop()
   }

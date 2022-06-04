@@ -11,6 +11,7 @@ const secondSquare = new SecondSquare(CELL_W, CELL_H)
 const thirdSquare = new ThirdSquare(CELL_W, CELL_H, FRAMERATE)
 const fourthSquare = new FourthSquare(CELL_W, CELL_H, FRAMERATE)
 const fifthSquare = new FifthSquare(CELL_W, CELL_H, FRAMERATE)
+const sixthSquare = new SixthSquare(CELL_W, CELL_H, FRAMERATE)
 const seventhSquare = new SeventhSquare(CELL_W, CELL_H, FRAMERATE)
 const eighthSquare = new EighthSquare(CELL_W, CELL_H, FRAMERATE)
 const ninthSquare = new NinthSquare(CELL_W, CELL_H, FRAMERATE)
@@ -20,6 +21,7 @@ function setup() {
   frameRate(FRAMERATE)
 
   secondSquare.setup()
+  fifthSquare.setup()
   eighthSquare.setup()
   ninthSquare.setup()
 }
@@ -31,6 +33,7 @@ function draw() {
   thirdSquare.init()
   fourthSquare.init()
   fifthSquare.init()
+  sixthSquare.init()
   seventhSquare.init()
   eighthSquare.init()
   ninthSquare.init()
