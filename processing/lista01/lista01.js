@@ -11,39 +11,31 @@ const secondSquare = new SecondSquare(CELL_W, CELL_H)
 const thirdSquare = new ThirdSquare(CELL_W, CELL_H, FRAMERATE)
 const fourthSquare = new FourthSquare(CELL_W, CELL_H, FRAMERATE)
 const fifthSquare = new FifthSquare(CELL_W, CELL_H, FRAMERATE)
+const seventhSquare = new SeventhSquare(CELL_W, CELL_H, FRAMERATE)
+const eighthSquare = new EighthSquare(CELL_W, CELL_H, FRAMERATE)
+const ninthSquare = new NinthSquare(CELL_W, CELL_H, FRAMERATE)
 
 function setup() {
   createCanvas(CANVAS_W, CANVAS_H)
   frameRate(FRAMERATE)
 
   secondSquare.setup()
+  eighthSquare.setup()
+  ninthSquare.setup()
 }
 
 
 function draw() {
-  drawDivisions()
-
   firstSquare.init()
   secondSquare.init()
   thirdSquare.init()
   fourthSquare.init()
   fifthSquare.init()
+  seventhSquare.init()
+  eighthSquare.init()
+  ninthSquare.init()
 }
 
-
-const drawDivisions = () => {
-
-  // Second line
-  // fill('purple')
-  // rect(0,300,CELL_W,CELL_H)
-  fill('white')
-  rect(600,300,CELL_W,CELL_H)
-
-  // Third line
-  fill('brown')
-  rect(0,600,CELL_W,CELL_H)
-  fill('gray')
-  rect(300,600,CELL_W,CELL_H)
-  fill('orange')
-  rect(600,600,CELL_W,CELL_H)
+function keyPressed() {
+  eighthSquare.keyPressed()
 }
