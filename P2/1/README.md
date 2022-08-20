@@ -8,4 +8,4 @@ python main.py
 ```
 
 ## Aplicação executando
-![Dado]('screenshot1.png')
+![Dado](screenshot1.png)
