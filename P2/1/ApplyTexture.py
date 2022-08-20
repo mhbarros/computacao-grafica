@@ -61,7 +61,7 @@ class ApplyTexture:
     def main(self, draw):
         glutInit(sys.argv)
         glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH)
-        glutInitWindowSize(640, 480)
+        glutInitWindowSize(self.width, self.height)
         glutInitWindowPosition(0, 0)
         glutCreateWindow(self.window_title)
         glutDisplayFunc(draw)

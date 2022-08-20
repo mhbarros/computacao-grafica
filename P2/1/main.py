@@ -2,7 +2,7 @@ from ApplyTexture import ApplyTexture
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 
-tx = ApplyTexture('Dado', 800, 800)
+tx = ApplyTexture('Dado', 1280, 720)
 
 x_rotation = y_rotation = z_rotation = 0.0
 direction = (0.1, 0.2, 1)
