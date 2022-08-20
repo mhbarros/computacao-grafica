@@ -4,7 +4,7 @@ from OpenGL.GLUT import *
 
 from Sphere import Sphere, rotate, set_angle, angle
 
-tx = ApplyTexture('Planeta Terra', 1200, 800)
+tx = ApplyTexture('Planeta Terra', 1280, 720)
 
 earth = Sphere(0, 0, 0, 5, density=80)
 

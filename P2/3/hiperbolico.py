@@ -132,7 +132,7 @@ def init():
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA |
                         GLUT_DEPTH | GLUT_MULTISAMPLE)
     glutInitWindowSize(int(width), int(height))
-    glutCreateWindow("Paraboloide Hiperbólico")
+    glutCreateWindow("Paraboloide Hiperbolico")
     glutDisplayFunc(draw)
     glEnable(GL_MULTISAMPLE)
     glEnable(GL_DEPTH_TEST)

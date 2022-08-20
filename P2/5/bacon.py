@@ -117,7 +117,7 @@ def init():
     glutInit(sys.argv)
     glutInitDisplayMode(GLUT_DEPTH | GLUT_RGB | GLUT_DOUBLE)
     glutInitWindowSize(1280, 720)
-    glutCreateWindow("Function Plotter")
+    glutCreateWindow("Bacon (?)")
 
     __init__()
     glutReshapeFunc(change_size)
